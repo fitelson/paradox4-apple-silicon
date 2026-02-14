@@ -2,4 +2,7 @@
 *.o*
 *.a
 dist
+dist-newstyle
 src/paradox
+src/paradox.bin
+.DS_Store

@@ -106,7 +106,7 @@ public:
 
     // -- use this function instead:
     template<class V>
-    friend Clause* Clause_new(const V& ps, bool learnt = false);
+    friend Clause* Clause_new(const V& ps, bool learnt);
 
     int          size        ()      const   { return size_etc >> 3; }
     void         shrink      (int i)         { assert(i <= size()); size_etc = (((size_etc >> 3) - i) << 3) | (size_etc & 7); }
@@ -142,6 +142,11 @@ Clause* Clause_new(const V& ps, bool learnt) {
 // TrailPos -- Stores an index into the trail as well as an approximation of a level. This data
 // is recorded for each assigment. (Replaces the old level information)
 
+
+template<class V>
+Clause* Clause_new(const V& ps) {
+    return Clause_new(ps, false);
+}
 
 class TrailPos {
     int tp;

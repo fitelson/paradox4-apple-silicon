@@ -35,7 +35,7 @@ Sat.o: Sat.hs
 #-- Paradox
 
 paradox.exe: Sat.o *.hs Paradox/*.hs $(INST)/*.or $(MINISAT)/*.or
-	$(GHC) $(HSAT) $(HFLAGS) -main-is Paradox.Main.main --make Paradox.Main -o paradox
+	$(GHC) $(HSAT) $(HFLAGS) -main-is Paradox.Main.main --make Paradox.Main -o paradox.bin
         
 smellyparadox.exe: Sat.o *.hs Paradox/*.hs $(INST)/*.or $(MINISAT)/*.or
 	$(GHC) $(HSAT) $(HFLAGS) -main-is Paradox.Smelly.main --make Paradox.Smelly -o smellyparadox
