@@ -28,4 +28,4 @@ executable paradox
 
 source-repository head
   type:     git
-  location: https://github.com/c-cube/paradox
+  location: https://github.com/fitelson/paradox4-apple-silicon
