@@ -35,6 +35,15 @@ for GHC 7.10 and C++11. This fork adds further patches to build on
 
 ### Using the Makefile directly
 
+The Makefile invokes `ghc` directly, so three packages that are not
+exposed by default in GHC 9.x must be made visible first:
+
+```bash
+cabal install --lib random containers unix
+```
+
+Then build:
+
 ```bash
 cd src && make
 ```
