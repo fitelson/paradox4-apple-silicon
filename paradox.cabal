@@ -4,8 +4,9 @@
 name:                paradox
 version:             4.0
 synopsis:            finite model finder for first-order logic
-description:         this is a fork of Paradox, updated to compile with recent
-                     versions of GHC and g++
+description:         this is a fork of Paradox (originally by Koen Claessen and
+                     Niklas Sorensson), updated to compile with recent versions
+                     of GHC and g++
 homepage:            http://vlsicad.eecs.umich.edu/BK/Slots/cache/www.cs.chalmers.se/~koen/paradox/
 license:             GPL-2
 license-file:        LICENSE

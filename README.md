@@ -68,6 +68,11 @@ to update the resolver for a modern GHC.
 ./src/paradox.bin problem.tptp
 ```
 
+## Original Authors
+
+- **Koen Claessen** (Chalmers University of Technology)
+- **Niklas Sörensson** (Chalmers University of Technology)
+
 ## License
 
 GPL-2 (see [LICENSE](LICENSE)).
